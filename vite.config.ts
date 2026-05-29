@@ -14,10 +14,8 @@ export default defineConfig({
     server: { entry: "server" },
   },
   vite: {
-    plugins: [
-      nitro({
-        preset: "vercel",
-      }),
-    ],
+    nitro: {
+      preset: "vercel",
+    },
   },
 });
