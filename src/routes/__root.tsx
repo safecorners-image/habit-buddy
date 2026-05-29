@@ -75,14 +75,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Habbit Buddy" },
+      { name: "description", content: "Habit Buddy is a personal habit tracker application." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Habbit Buddy" },
+      { property: "og:description", content: "Habit Buddy is a personal habit tracker application." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Habbit Buddy" },
+      { name: "twitter:description", content: "Habit Buddy is a personal habit tracker application." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/747f5b6f-db24-4e27-807c-034b9dbb09a0/id-preview-0f230eef--f5cc815c-0097-41eb-b97f-8806185aa154.lovable.app-1780017664535.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/747f5b6f-db24-4e27-807c-034b9dbb09a0/id-preview-0f230eef--f5cc815c-0097-41eb-b97f-8806185aa154.lovable.app-1780017664535.png" },
     ],
     links: [
       {
