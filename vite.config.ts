@@ -15,5 +15,9 @@ export default defineConfig({
   nitro: {
     // Force-enable Nitro and set preset to 'vercel' when building on Vercel
     preset: process.env.VERCEL === "1" ? "vercel" : undefined,
+    // Explicitly set the output directory to Vercel's expected path (.vercel/output)
+    output: process.env.VERCEL === "1" ? {
+      dir: ".vercel/output",
+    } : undefined,
   },
 });
