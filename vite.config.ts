@@ -12,14 +12,4 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
-  nitro: {
-    // Force-enable Nitro and set preset to 'vercel' when building on Vercel
-    preset: process.env.VERCEL === "1" ? "vercel" : undefined,
-    // Explicitly set the output directory structure for Vercel Build Output API
-    output: process.env.VERCEL === "1" ? {
-      dir: ".vercel/output",
-      serverDir: ".vercel/output/functions/__server.func",
-      publicDir: ".vercel/output/static",
-    } : undefined,
-  },
 });
